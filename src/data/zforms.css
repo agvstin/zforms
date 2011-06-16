@@ -1,0 +1,76 @@
+.zforms input {
+  background: #EEE url('images/input-bg.gif') repeat-x 0 1px scroll;
+  border: 1px solid #AAA;
+  font-family: Arial;
+  font-size: .8em;
+  padding: 3px .35em;
+}
+.zforms fieldset {
+  margin: 0;
+  padding: 0;
+}
+.zforms legend {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.zforms-component {
+    float: left;
+    clear:both;
+    padding: 4px 12px 8px 8px;
+    margin: 0 0 8px 0;
+    border: 1px solid transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.zforms-component.zforms-error-wrapper legend {
+  background: url(images/exclamation.png) no-repeat left;
+  padding-left: 18px;
+}
+
+.zforms label {
+    display:block;
+}
+
+.zforms label.required:after {     
+  content: ' *';
+  color: red;
+}
+
+.zforms-inline-group .zforms-element,
+.zforms-button-group .zforms-element {
+    float: left;
+    margin-right: 0.7em;
+}
+
+.zforms-button-group label {
+    display: none;
+}
+
+.zforms-wrapper .description, .zforms .hint {
+    font-size: smaller;
+    color: #AAA;
+}   
+
+.zforms-sub-label {
+  display: block;
+  font-size: smaller;
+}
+
+/** state **/
+.zforms-component-active {
+  background-color: #DFEFFF;
+  border-color:#C2D7EF;
+}
+
+/** errors **/
+.zforms-element .errors {
+  display: none;
+}
+.zforms-error-wrapper {
+    background-color: #FFDFE0;
+    border-color: #EFC2C4;
+} 
+.zforms-error-on-input {
+    background-color: #EFC2C4;
+}
